@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Grupo ViCo</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-bar">
+            <img src="../img/Grupo ViCo (1).png" alt="Logo Grupo ViCo" class="logo-img">
+            <span class="titulo-vico">Grupo ViCo</span>
+        </div>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html" class="activo" aria-current="page">Productos</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <label for="categoria"><strong>Filtrar por categoría:</strong></label>
+        <select id="categoria" onchange="filtrarProductos()">
+            <option value="todos">Todos</option>
+            <option value="ferreteria">Ferretería</option>
+            <option value="papeleria">Papelería</option>
+        </select>
+        <section class="productos">
+            <div class="producto ferreteria">
+                <div class="contenido-producto">
+                    <img src="../img/Amoladora Angular 115mm 820w Black Decker G720n Color Naranja.png" alt="Amoladora">
+                    <h4>Amoladora</h4>
+                    <p>Amoladora Angular 115mm 820w Black Decker G720n Color Naranja.</p>
+                </div>
+                <p class="precio"><strong>$62.000</strong></p>
+            </div>
+            <div class="producto ferreteria">
+                <div class="contenido-producto">
+                    <img src="../img/Caja Juego Set Tubo 26 Encastre  1 Pulgada Camion Gomer.JPG" alt="Set de llaves tubo - Caja Juego Set Tubo 26 Encastre  1 Pulgada Camion Gomer ">
+                    <h4>Llaves Tubo</h4>
+                    <p>Caja Juego Set Tubo 26 Encastre 3/4 1 Pulgada.</p>
+                </div>
+                <p class="precio"><strong>$27.800</strong></p>
+            </div>
+            <div class="producto ferreteria">
+                <div class="contenido-producto">
+                    <img src="../img/Electrosierra Motosierra Lusqtoff 2000w Espada 40cm Esl200-8 Color Anaranjado.png" alt="Electrosierra Lusqtoff 2000w Espada 40cm Color naranja">
+                    <h4>Motosierra Lusqtoff</h4>
+                    <p>Electrosierra Motosierra Lusqtoff 2000w.</p>
+                </div>
+                <p class="precio"><strong>$74.500</strong></p>
+            </div>
+            <div class="producto ferreteria">
+                <div class="contenido-producto">
+                    <img src="../img/ESTACION DE SOLDADO LUSQTOFF.JPG" alt="ESTACIÓN DE SOLDADO LUSQTOFF Modelo: ES3L45-8 Frecuencia: 50Hz Tamaño: 120 x 193 x 170 mm Peso: 1,80 Kg">
+                    <h4>Soldadora</h4>
+                    <p>ESTACIÓN DE SOLDADO LUSQTOFF Modelo: ES3L45-8.</p>
+                </div>
+                <p class="precio"><strong>$49.990</strong></p>
+            </div>
+            <div class="producto ferreteria">
+                <div class="contenido-producto">
+                    <img src="../img/Hidrolavadora de alta presion daewoo.jpg" alt="Hidrolavadora Daewoo DAX21-150 - Voltaje: 220V ">
+                    <h4>Hidrolavadora Daewoo</h4>
+                    <p>Hidrolavadora de Alta Presión Daewoo DAX21-150.</p>
+                </div>
+                <p class="precio"><strong>$89.990</strong></p>
+            </div>
+            <div class="producto ferreteria">
+                <div class="contenido-producto">
+                    <img src="../img/JUEGO DE LLAVES ALLEN TORX T10.JPG" alt="Llaves Allen Acero Hexagonal Milimétricas TORX T10 A T15">
+                    <h4>Juego de Llaves Allen IEUSEW</h4>
+                    <p>Juego de Llaves Allen torx T10 a T15.</p>
+                </div>
+                <p class="precio"><strong>$15.900</strong></p>
+            </div>
+            <div class="producto ferreteria">
+                <div class="contenido-producto">
+                    <img src="../img/Juego De Pinzas Para Seguros Seguer X4 Mecanico E1.JPG" alt="Juego De Pinzas Para Seguros Seguer X4 Eurotech 7 pulgadas">
+                    <h4>Juego de Pinzas Seguer</h4>
+                    <p>Juego de Pinzas Seguer x4 Eurotech 7 pulgadas.</p>
+                </div>
+                <p class="precio"><strong>$9.500</strong></p>
+            </div>
+            <div class="producto ferreteria">
+                <div class="contenido-producto">
+                    <img src="../img/JUEGO DE TUBOS BAHCO S138- TORQUIMETRO ENCASTRE.JPG" alt="Juego Tubos Bahco Crique Bocallave 3/8 En Pulgada 33 Piezas">
+                    <h4>Juego de Tubos BAHCO</h4>
+                    <p>Juego de Llaves Tubos Bahco Crique Bocallave 3/8.</p>
+                </div>
+                <p class="precio"><strong>$53.700</strong></p>
+            </div>
+            <div class="producto ferreteria">
+                <div class="contenido-producto">
+                    <img src="../img/Lijadora Orbital 200w Black and Decker.png" alt="Lijadora Orbital 200w 1/4 Hoja Black & Decker Bs200 Black + Decker Bs200-ar 220V">
+                    <h4>Lijadora Orbital Black & Decker</h4>
+                    <p>Lijadora Orbital 200w 1/4 Hoja.</p>
+                </div>
+                <p class="precio"><strong>$32.400</strong></p>
+            </div>
+            <div class="producto ferreteria">
+                <div class="contenido-producto">
+                    <img src="../img/Metro De Madera Carpintero 2 Mts Sola Plegable Madera Haya.JPG" alt="Metro De Madera Carpintero 2 Mts Sola Plegable">
+                    <h4>Metro de Madera</h4>
+                    <p>Metro de madera Plegable 2Mts.</p>
+                </div>
+                <p class="precio"><strong>$2.500</strong></p>
+            </div>
+            <div class="producto papeleria">
+                <div class="contenido-producto">
+                    <img src="../img/HOJA SIMPLE X 30.jpeg" alt="Papel Higiénico simple hoja x 30 metros">
+                    <h4>Papel Higiénico</h4>
+                    <p>Elegante Simple Hoja - Suavida y Absorción.</p>
+                </div>
+                <p class="precio"><strong>$1.200</strong></p>
+            </div>
+            <div class="producto papeleria">
+                <div class="contenido-producto">
+                    <img src="../img/DOBLE HOJA X 30.jpeg" alt="Papel Higiénico doble hoja x 30 metros">
+                    <h4>Papel Higiénico</h4>
+                    <p>Elegante Doble Hoja - Mas Suavidad, Mas Absorción.</p>
+                </div>
+                <p class="precio"><strong>$1.500</strong></p>
+            </div>
+            <div class="producto papeleria">
+                <div class="contenido-producto">
+                    <img src="../img/HIGIÉNICO 4X80.jpeg" alt="Papel Higiénico simple hoja ultra blanco x 80 metros">
+                    <h4>Papel Higiénico</h4>
+                    <p>Elegante Simple Hoja - Enriquecido con extracto de algodón, textura suave y delicada.</p>
+                </div>
+                <p class="precio"><strong>$3.200</strong></p>
+            </div>
+            <div class="producto papeleria">
+                <div class="contenido-producto">
+                    <img src="../img/HIGIÉNICO 6X30 CON ALOE.jpeg" alt="Papel Higiénico simple hoja con aloe vera">
+                    <h4>Papel Higiénico</h4>
+                    <p>Elegante Simple Hoja - Con Aloe Vera  6 rollos.</p>
+                </div>
+                <p class="precio"><strong>$2.800</strong></p>
+            </div>
+            <div class="producto papeleria">
+                <div class="contenido-producto">
+                    <img src="../img/HIGIÉNICO 4x30 TRIPLE HOJA.jpeg" alt="Papel Higiénico triple hoja x 20 mentros">
+                    <h4>Papel Higiénico</h4>
+                    <p>Elegante Triple Hoja - Extra confort y Suavidad de Pétalos.</p>
+                </div>
+                <p class="precio"><strong>$2.500</strong></p>
+            </div>
+            <div class="producto papeleria">
+                <div class="contenido-producto">
+                    <img src="../img/ROLLO DICHA X 12.jpeg" alt="Rollo De Cocina Dicha Absorbente 40 Paños">
+                    <h4>Rollo de Cocina</h4>
+                    <p>Rollo De Cocina Dicha 40 Paños Pack 3 Rollos.</p>
+                </div>
+                <p class="precio"><strong>$2.100</strong></p>
+            </div>
+            <div class="producto papeleria">
+                <div class="contenido-producto">
+                    <img src="../img/ROLLO COCINA ELEGANTE 3x50 PAÑOS.jpeg" alt="Rollo de Cocina Elegante- 50 paños por rollo">
+                    <h4>Rollo de Cocina</h4>
+                    <p>Rollo De Cocina Elegante 50 paños por rollo - Super absorbente.</p>
+                </div>
+                <p class="precio"><strong>$2.500</strong></p>
+            </div>
+            <div class="producto papeleria">
+                <div class="contenido-producto">
+                    <img src="../img/ROLLO 3X100 PAÑOS.jpeg" alt="Rollo de Cocina Elegante Premium - 100 paños por rollo">                
+                    <h4>Rollo de Cocina</h4>
+                    <p>Rollo De Cocina Elegante 100 paños por rollo - Premium Super absorbente.</p>
+                </div>
+                <p class="precio"><strong>$3.300</strong></p>
+            </div>
+            <div class="producto papeleria">
+                <div class="contenido-producto">
+                    <img src="../img/ROLLO 3X120 PAÑOS.jpeg" alt="Rollo de Cocina Elegante Premium - 120 paños por rollo - Mega rollo de cocina">
+                    <h4>Rollo de Cocina</h4>
+                    <p>Rollo De Cocina Elegante 120 paños por rollo - Premium Ultra absorbente.</p>
+                </div>
+                <p class="precio"><strong>$3.600</strong></p>
+            </div>
+            <div class="producto papeleria">
+                <div class="contenido-producto">
+                    <img src="../img/ROLLO COCINA ELEGANTE 12X200 PAÑOS.jpeg" alt="Rollo de Cocina Elegante Gigante - 200 paños por rollo - Rollo de cocina Doble hoja">
+                    <h4>Rollo de Cocina</h4>
+                    <p>Rollo De Cocina Elegante 200 paños por rollo - Doble hoja - Mayor rendimiento.</p>
+                </div>
+                <p class="precio"><strong>$5.900</strong></p>
+            </div>
+        </section>
+        <script>
+            function filtrarProductos() {
+                const categoria = document.getElementById('categoria').value;
+                const productos = document.querySelectorAll('.producto');
+                productos.forEach(producto => {
+                    producto.style.display = (categoria === 'todos' || producto.classList.contains(categoria)) ? 'inline-block' : 'none';
+                });
+            }
+            // Detectar parámetro en la URL y filtrar automáticamente
+            window.onload = function() {
+                const params = new URLSearchParams(window.location.search);
+                const categoria = params.get('categoria');
+                if (categoria) {
+                    document.getElementById('categoria').value = categoria;
+                    filtrarProductos();
+                }
+            };
+        </script>
+    </main>
+    <footer>
+        <p>Seguinos en nuestras redes:</p>
+        <a href="https://facebook.com/" target="_blank" rel="noopener">
+            <img src="../img/face.jpeg" alt="Facebook">
+        </a>
+        <a href="https://instagram.com/" target="_blank" rel="noopener">
+            <img src="../img/Insta.jpg" alt="Instagram">
+        </a>
+        <a href="https://youtube.com/" target="_blank" rel="noopener">
+            <img src="../img/youtube.png" alt="YouTube">
+        </a>
+    </footer>
+</body>
+</html>
