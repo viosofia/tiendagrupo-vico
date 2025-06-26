@@ -1,0 +1,10 @@
+# Carpetas que no queremos subir
+node_modules/
+.vscode/
+scss/*.css
+scss/*.css.map
+*.map
+.DS_Store
+
+# Archivos del sistema
+Thumbs.db
