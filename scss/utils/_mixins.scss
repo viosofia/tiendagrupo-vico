@@ -1,0 +1,31 @@
+@mixin boton-base {
+    padding: 10px 15px;
+    border-radius: $radius;
+    text-decoration: none;
+    display: inline-block;
+    font-family: $fuente-principal;
+}
+
+@mixin grid($cols) {
+    display: grid;
+    grid-template-columns: repeat($cols, 1fr);
+    gap: 20px;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin media($type, $value) {
+    @if $type == max {
+        @media (max-width: $value) {
+            @content;
+        }
+    } @else if $type == min {
+        @media (min-width: $value) {
+            @content;
+        }
+    }
+}

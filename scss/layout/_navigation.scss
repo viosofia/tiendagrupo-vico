@@ -1,0 +1,62 @@
+@use '../utils/variables' as *;
+
+nav {
+    ul,
+    ul.main-nav {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        background-color: $color-secundario;
+        padding: 12px 0 10px 0;
+        margin: 0;
+        border-radius: 0 0 16px 16px;
+        box-shadow: 0 2px 10px rgba($color-primario, 0.13);
+        gap: 12px;
+
+        li {
+        margin: 0;
+
+        a {
+            color: $color-primario;
+            text-decoration: none;
+            font-size: 1.13rem;
+            padding: 8px 22px;
+            border-radius: 6px;
+            font-family: $fuente-principal;
+            font-weight: 600;
+            letter-spacing: 1px;
+            display: block;
+            position: relative;
+            transition: background 0.17s, color 0.17s, box-shadow 0.16s;
+
+            &:hover,
+            &.activo,
+            &[aria-current="page"] {
+            background: $color-primario;
+            color: #fff;
+            text-decoration: none;
+            box-shadow: 0 3px 12px rgba($color-primario, 0.2);
+            font-weight: 800;
+            }
+
+            &::after {
+            content: '';
+            display: block;
+            margin: 0 auto;
+            width: 0%;
+            height: 2.5px;
+            background: $color-primario;
+            border-radius: 2px;
+            transition: width 0.22s;
+            }
+
+            &:hover::after,
+            &.activo::after,
+            &[aria-current="page"]::after {
+            width: 80%;
+            background: #fff;
+            }
+        }
+        }
+    }
+}

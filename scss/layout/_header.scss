@@ -1,0 +1,56 @@
+@use '../utils/variables' as *;
+
+header {
+    background-color: $color-secundario;
+    padding: 0;
+    border-bottom: 3px solid $color-primario;
+
+    .header-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: $color-primario;
+    width: 100%;
+    min-height: 54px;
+    padding: 20px 0 10px 0;
+
+    .logo-img {
+        height: 100px;
+        width: auto;
+        margin-left: 22px;
+        flex-shrink: 0;
+        border-radius: 8px;
+        background: #fff;
+        border: 2px solid $color-primario;
+        box-shadow: 0 1px 4px rgba($color-primario, 0.13);
+    }
+
+    .titulo-vico {
+        font-family: $fuente-principal !important;
+        font-size: 2.7rem;
+        letter-spacing: 2px;
+        color: #fff;
+        font-weight: bold;
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        pointer-events: none;
+        z-index: 1;
+        line-height: 1;
+        animation: fadeInUp 1s ease forwards;
+
+        &:hover {
+            background: linear-gradient(90deg, #fff, #d3e8ff, #fff);
+            background-size: 200% auto;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent; // para Firefox
+            -webkit-text-fill-color: transparent;
+            animation: shine 1.5s linear infinite;
+            }
+        }
+    }
+}

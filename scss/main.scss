@@ -1,0 +1,16 @@
+@use 'utils/variables';
+@use 'utils/mixins';
+
+@use 'base/typography';
+@use 'layout/header';
+@use 'layout/footer';
+@use 'layout/navigation';
+@use 'layout/main';
+@use 'layout/responsive';
+
+@use 'components/productos';
+@use 'components/form';
+@use 'components/faq';
+@use 'components/secciones';
+@use 'components/animations';
+
