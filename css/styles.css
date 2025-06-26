@@ -194,13 +194,6 @@ footer img:hover {
   align-items: center;
 }
 
-.precio, .oferta-precio {
-  color: #004AAD;
-  font-size: 1.15rem;
-  margin-top: 7px;
-  margin-bottom: 0;
-}
-
 .producto:hover {
   box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
@@ -223,8 +216,7 @@ footer img:hover {
 }
 
 .producto p,
-.producto .precio,
-.producto .oferta-precio {
+.producto .precio {
   font-size: 0.95rem;
   width: 100%;
   text-align: center;
@@ -446,4 +438,37 @@ footer img:hover {
   .mapa-img {
     max-width: 95vw;
   }
+}
+
+.faq {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.faq h2 {
+  color: #004AAD;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  background: #f9f9f9;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px #004aad11;
+}
+
+.faq-question {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #004AAD;
+  font-weight: bold;
+}
+
+.faq-answer {
+  margin-top: 10px;
+  color: #444;
+  line-height: 1.5;
 }
