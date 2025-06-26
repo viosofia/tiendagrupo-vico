@@ -1,0 +1,7 @@
+@use '../utils/variables' as *;
+
+body {
+    font-family: $fuente-principal;
+    color: $color-texto;
+    line-height: 1.6;
+}
