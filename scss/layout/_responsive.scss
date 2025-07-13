@@ -1,96 +1,103 @@
 @use '../utils/variables' as *;
 @use '../utils/mixins' as *;
 
-/* Pantalla hasta 1100px */
-@include media(max, 1100px) {
-    .productos {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    }
-
-/* Pantalla hasta 900px */
-@include media(max, 900px) {
-    .productos-destacados,
-    .secciones-container {
-        flex-direction: column;
-        gap: 10px;
+/* Desktop: desde 701px */
+@include media(min, 701px) {
+    .main-nav {
+        display: flex;
+        flex-direction: row;
+        background: transparent;
+        box-shadow: none;
+        border-radius: 0;
+        gap: initial;
+        padding: 0;
     }
 
-    .producto,
-    .seccion {
-        max-width: 100%;
-        min-width: 0;
+    .menu-toggle {
+        display: none;
     }
-    }
+}
 
-/* Pantalla hasta 800px */
-@include media(max, 800px) {
-    .productos {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    }
-
-/* Pantalla hasta 700px */
+/* Mobile: hasta 700px */
 @include media(max, 700px) {
-    nav ul,
-    nav ul.main-nav {
+    .menu-toggle {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        color: $color-primario;
+        padding: 10px;
+    }
+
+    .main-nav {
+        display: none;
         flex-direction: column;
+        background: #e0e0e0;
         border-radius: 0 0 10px 10px;
         gap: 2px;
         padding: 5px 0;
         box-shadow: 0 2px 6px rgba($color-primario, 0.13);
     }
 
-    nav ul li a,
-    nav ul.main-nav li a {
+    .main-nav.active {
+        display: flex;
+    }
+
+    nav ul li a {
         font-size: 1.12rem;
-        padding: 8px 8px;
+        padding: 8px;
         border-radius: 4px;
     }
-    }
-
-/* Pantalla hasta 600px */
-@include media(max, 600px) {
-    main {
-        padding: 10px;
-    }
-
-    .producto img {
-        max-height: 120px;
-    }
-
-    .producto,
-    .seccion {
-        padding: 8px;
-    }
-
-    .productos {
-        grid-template-columns: 1fr;
-    }
-
     .header-bar {
-        flex-direction: column;
-        align-items: flex-start;
-        min-height: unset;
-        padding-left: 10px;
-        padding-right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 0.5rem;
     }
 
-    .form-grid {
-        grid-template-columns: 1fr;
-        gap: 13px 0;
+    .logo-img {
+        width: 60px;
+        height: auto;
     }
 
-    .form-group.form-consulta {
-        grid-column: 1;
+    .titulo-vico {
+        font-size: 1.5rem;
+        flex: 1;
+        margin-left: 10px;
+        text-align: center;
     }
 
-    .formulario-contacto {
-        padding: 13px 3vw 12px 3vw;
-        max-width: 96vw;
+    .contenido-producto img {
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
     }
 
-    .mapa-img {
-        max-width: 95vw;
+    .producto {
+        text-align: center;
     }
 }
+
+/* Página quienes somos */
+.quienes-somos {
+    text-align: center;
+    padding: 1rem;
+
+    img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        margin: 1rem auto;
+        display: block;
+    }
+
+    p {
+        max-width: 600px;
+        margin: 0 auto;
+        font-size: 1rem;
+    }
+}
+

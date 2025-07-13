@@ -1,15 +1,17 @@
 @use '../utils/variables' as *;
 @use '../utils/mixins' as *;
 
-    .productos-destacados {
+.productos-destacados {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     gap: 20px;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
-    .productos {
-    @include grid(5);
+.productos {
+  @include grid(5); // 5 columnas en desktop
     padding: 20px 0;
 }
 
@@ -29,13 +31,16 @@
     height: 100%;
     min-height: 340px;
     position: relative;
+    overflow: hidden;
 
     &:hover {
         box-shadow: $sombra-hover;
     }
 
     img {
-        width: 100%;
+        max-width: 100%;
+        width: auto;
+        height: auto;
         max-height: 180px;
         object-fit: contain;
         border-radius: 8px;
@@ -64,3 +69,42 @@
         align-items: center;
     }
 }
+
+/* 🌱 Responsive ajustes específicos para productos */
+
+/* hasta 1100px → 3 columnas */
+@include media(max, 1100px) {
+    .productos {
+        @include grid(3);
+    }
+}
+
+/* hasta 800px → 2 columnas */
+@include media(max, 800px) {
+    .productos {
+        @include grid(2);
+    }
+}
+
+/* hasta 600px → 1 columna, estilo columna como destacados */
+@include media(max, 600px) {
+    .productos {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .producto {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        min-height: auto;
+    }
+
+    .producto img {
+        max-width: 150px;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+

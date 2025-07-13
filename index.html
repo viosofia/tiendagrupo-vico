@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - Grupo ViCo</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
         <div class="header-bar">
-            <img src="img/Grupo ViCo (1).png" alt="Logo Grupo ViCo" class="logo-img">
+            <img src="img/grupovico-1.png" alt="Logo Grupo ViCo" class="logo-img">
             <span class="titulo-vico">Grupo ViCo</span>
         </div>
-        <nav>
+        <nav class="navbar">
+            <div class="menu-toggle" id="menu-toggle">☰
+            </div>
             <ul class="main-nav">
                 <li><a href="index.html" class="activo" aria-current="page">Inicio</a></li>
                 <li><a href="pages/productos.html">Productos</a></li>
@@ -101,5 +104,14 @@
             <img src="img/youtube.png" alt="Logo de YouTube">
         </a>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const toggle = document.getElementById("menu-toggle");
+            const nav = document.querySelector(".main-nav");
+            toggle.addEventListener("click", () => {
+            nav.classList.toggle("active");
+            });
+        });
+    </script>
 </body>
 </html>

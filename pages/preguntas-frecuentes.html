@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas Frecuentes - Grupo ViCo</title>
+    <link rel="icon" href="../img/favicon.png" type="image/png">
     <link rel="stylesheet" href="../css/styles.css">
     </head>
     <body>
     <header>
         <div class="header-bar">
-            <img src="../img/Grupo ViCo (1).png" alt="Logo Grupo ViCo" class="logo-img">
+            <img src="../img/grupovico-1.png" alt="Logo Grupo ViCo" class="logo-img">
             <span class="titulo-vico">Grupo ViCo</span>
         </div>
-        <nav>
+        <nav class="navbar">
+        <div class="menu-toggle" id="menu-toggle">☰
+        </div>
         <ul class="main-nav">
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="productos.html">Productos</a></li>
@@ -43,5 +46,14 @@
         <a href="https://instagram.com/" target="_blank"><img src="../img/Insta.jpg" alt="Instagram de Grupo ViCo"></a>
         <a href="https://youtube.com/" target="_blank"><img src="../img/youtube.png" alt="YouTube de Grupo ViCo"></a>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const toggle = document.getElementById("menu-toggle");
+            const nav = document.querySelector(".main-nav");
+            toggle.addEventListener("click", () => {
+            nav.classList.toggle("active");
+            });
+        });
+    </script>
 </body>
 </html>
