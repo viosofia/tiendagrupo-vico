@@ -44,6 +44,21 @@ header {
         line-height: 1;
         animation: fadeInUp 1s ease forwards;
 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.3em;
+
+        .titulo-grupo {
+            font-weight: 300; // más fina
+            text-transform: none;
+        }
+
+        .titulo-vico-bold {
+            font-weight: 900; // negrita
+            text-transform: uppercase;
+        }
+
         &:hover {
             background: linear-gradient(90deg, #fff, #d3e8ff, #fff);
             background-size: 200% auto;

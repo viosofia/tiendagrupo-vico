@@ -36,15 +36,23 @@
     padding: 15px;
     transition: box-shadow 0.2s;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 300px;
+
     &:hover {
         box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
     }
 
     img {
-        width: 100%;
+        max-width: 100%;
         height: auto;
         border-radius: 10px;
         margin-bottom: 1rem;
         box-shadow: $sombra-light;
+        display: block;
     }
 }

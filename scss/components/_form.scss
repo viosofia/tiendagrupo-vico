@@ -80,3 +80,14 @@
         }
     }
 }
+@media (max-width: 600px) {
+    .formulario-contacto {
+        .form-grid {
+        grid-template-columns: 1fr; // de dos columnas pasa a una
+        }
+
+        .form-group.form-consulta {
+        grid-column: auto; // ocupa solo una columna en mobile
+        }
+    }
+}

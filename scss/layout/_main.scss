@@ -24,9 +24,10 @@ html, body {
 }
 
 .mapa-img {
-    max-width: 95vw;
+    width: 100%;
     height: auto;
-    display: inline-block;
+    display: block;
     margin: 0 auto;
+    max-width: 500px; // opcional, para que no sea gigante en desktop
 }
 
